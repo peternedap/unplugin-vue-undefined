@@ -1,5 +1,4 @@
 <script lang="ts">
-import SharedComponent from 'src/SharedComponent.vue';
 import { defineComponent } from 'vue';
 import { RouteLocation } from 'vue-router';
 import logSomething from 'src/otherScript';
@@ -22,6 +21,4 @@ export default defineComponent({
             Go to other main
         </a>
     </RouterLink>
-    <br/>
-    <SharedComponent />
 </template>
