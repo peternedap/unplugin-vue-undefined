@@ -43,9 +43,10 @@ window.onunhandledrejection = (rejectedPromise: PromiseRejectionEvent) => {
 
 // Suppress vite preload errors, these are already handled by the global error handler
 window.addEventListener("vite:preloadError", (event) => {
-    console.warn("vite:preloadError", event);
-    event.preventDefault();
+    event.preventDefault(); // ! Loaders error caused by this line
     event.stopImmediatePropagation();
+
+    console.error("vite:preloadError", event);
 });
 
 

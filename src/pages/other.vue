@@ -1,13 +1,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { RouteLocation } from 'vue-router';
-import logSomething from 'src/otherScript';
-import { withErrorHandling } from 'src/router/Router';
 
 export default defineComponent({
-    beforeRouteEnter: withErrorHandling(async (route: RouteLocation) => {
-        logSomething();
-    }),
+    beforeRouteEnter: async (route: RouteLocation) => {
+        console.log('Entering other page route');
+    },
 });
 </script>
 <script lang="ts" setup>

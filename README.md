@@ -2,10 +2,10 @@
 
 Steps to reproduce:
 
-- Run `yarn install`
-- Run `yarn build`
-- Delete `other.[hash].js` in dist/assets or use `yarn break`
-- Run `yarn serve`
+- Run `npm install`
+- Run `npm run build`
+- Delete `other.[hash].js` in dist/assets or use `npm run break`
+- Run `npm run preview`
 - Go to <http://localhost:4173/>
 - Click the "Go to other page" link.
 

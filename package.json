@@ -1,28 +1,21 @@
 {
   "name": "unplugin-401",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "vite build --config vite/dev.config.ts",
+    "build": "vite build",
     "break": "rm $(find ./dist/assets -name other*.js)",
-    "serve": "vite preview --config vite/dev.config.ts"
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.18"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "typescript": "^5.8.3",
     "unplugin-vue-router": "^0.15.0",
     "vite": "^6.3.5",
-    "vite-tsconfig-paths": "^5.1.4",
     "vue-router": "^4.5.1",
     "vue-tsc": "^3.0.5"
-  },
-  "devDependenciesComments": {
-    "vue-router": "peer dependency of unplugin-vue-router",
-    "vue-tsc": "peer depency of vite-plugin-checker"
-  },
-  "dependencies": {
-    "vue": "^3.5.18"
   }
 }

@@ -2,25 +2,12 @@
     "compilerOptions": {
       "target": "esnext",
       "module": "esnext",
-      "allowJs": true,
-      "declaration": true,
-      "sourceMap": true,
       "outDir": "./dist",
-      "moduleResolution": "node",
-      "esModuleInterop": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "skipLibCheck": true,
-      "baseUrl": ".",
-      "paths": {
-        "vue-router/auto": [
-          "./node_modules/unplugin-vue-router/client"
-        ],
-      }
+      "moduleResolution": "bundler",
+      "types": ["unplugin-vue-router/client"]
     },
     "include": [
         "src",
-        "vite/lambdaMock.ts",
         "./typed-router.d.ts",
     ],
   }
